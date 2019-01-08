@@ -7,11 +7,12 @@
 </template>
 
 <script>
-import { XButton } from 'vux'
+import { XButton, Group } from 'vux'
 
 export default {
   components: {
-    XButton
+    XButton,
+    Group
   }
 }
 </script>

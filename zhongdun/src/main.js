@@ -3,14 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import vux from 'vux'
-import fastclick from 'fastclick'
-import axios from 'axios'
+
 
 Vue.config.productionTip = false
 
-fastclick.attach(document.body)
+const FastClick = require('fastclick')
+FastClick.attach(document.body)
 
+const axios = require('axios')
 Vue.prototype.$ajax = axios;
 
 /* eslint-disable no-new */
