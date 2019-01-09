@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store/'
+import ajax from './config/ajax'
+import './config/rem'
 import '@/assets/css/app.css'/*引入公共样式*/
 
 Vue.config.productionTip = false
@@ -17,6 +20,7 @@ Vue.prototype.$ajax = axios;
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
